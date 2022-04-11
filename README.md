@@ -17,6 +17,11 @@ It was not radical.
 
 And that's why I'm here to create a trivia website free from the themes, free from the ristrictions and free from boring teams.
 
-Using the lessons learned from Front-End Development we'll make something even better than teams trivia
+Using the lessons learned from Front-End Development we'll make something even better than teams trivia and we'll pull from one of the best games played in an office and competed on teams with: Wordle
+
+
+![image](https://user-images.githubusercontent.com/97201478/162844379-4dff57f7-7147-40d6-8990-cf07a77c56a7.png)
+
+We'll use what we know and make it even better.
 
 Let's Cascade this Sheet
