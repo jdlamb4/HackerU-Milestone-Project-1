@@ -15,13 +15,20 @@ She called out all my favorites as examples, Marvel, Star Wars, Game of Thrones,
 
 It was not radical.
 
-And that's why I'm here to create a trivia website free from the themes, free from the ristrictions and free from boring teams.
+And that's why I'm here to create a trivia website free from the no themsthemes, free from the ristrictions and free from boring teams.
 
-Using the lessons learned from Front-End Development we'll make something even better than teams trivia and we'll pull from one of the best games played in an office and competed on teams with: Wordle
-
-
-![image](https://user-images.githubusercontent.com/97201478/162844379-4dff57f7-7147-40d6-8990-cf07a77c56a7.png)
-
-We'll use what we know and make it even better.
+Using the lessons learned from Front-End Development we'll make something even better than teams trivia.
 
 Let's Cascade this Sheet
+
+It was initially thought that we would do something like wordle with hint, but looking back on it now, I think that would be too distracting for what I'm hoping to accomplish. Still I want to make it fun for my team though, so I want to make it somewhat like a computer game meets a trivia website.
+
+We'll start out the home page with a simple design to not overwhelm people. We'll have a hamburger menu be the home page and make it so that it animtes into an arrow when it is clicked and stays in an arrow when click and then open up to our two links the tutorial and the game.
+
+Is going to keep the multiple choice aspect of trivia, except our game is going to have you move a character into which choice you want to answer with. If the character is standing in the correct spot before time runs out. You get that question correct. If there character is not in the correct spot you got it wrong, even if you were going for that spot.
+
+The game will be formatted so that the question appears in the middle of the page in a white background and the 4 answer choices will be surrounding each corner in a different color. Think of it formatted like that game Simon where your had the circle with every quarter of that circle a different color and you had to push the colors in the order they lit up
+
+We'll use z positioning to place to the question in front of the colored answer choices so for right now it is okay to let the character run behind the question.
+
+Underneath the actual question will be a timer that gives you only a certain amount of time to answer the question to help prevent cheating by googling.
