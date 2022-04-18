@@ -1,15 +1,67 @@
-/* I want a nice clean background, something pure white 
-
-I'd like for hamburger menu to open up and have a cross animation to reveal the options for the website, About and play
-*/
-* {
-    background-color: black;
+nav {
+    /* background-color: blue; */
+    position: relative;
+    top: -10px;
+    margin-left: -10px;
+    text-align: center;
+    /* margin-right: -10px; */
+    /* margin: 0%;
+    border-right: 0px;
+    padding-right: 0px;
+    padding: 0%;
+    height: 50px;
+    width: auto; */
 }
 
-.relearn {
-    background-color: black;
+nav ul {
+    list-style-type: none;
+    text-align: center;
 }
 
-/* .more-practice {
-    remove.bg
-} */
+nav li{
+    display: inline;
+    padding: 200px;
+}
+
+nav a {
+    font-size: 1.5em;
+}
+
+#id{
+    display: inline;
+    height: 50vh;
+    width: 50vh;
+}
+
+.answer1{
+    background-color: #00C9A7;
+    float: left;
+    height: 450px;
+    width: 50%;
+}
+
+.answer2{
+    background-color: #845EC2;
+    float: right;
+    height: 450px;
+    width: 50%;
+}
+
+.bottom{
+    display: inline;
+    border-top: 10px solid white;
+}
+
+.answer3{
+    background-color: #2C73D2;
+    float: right;
+    height: 450px;
+    width: 50%;
+}
+
+.answer4{
+    background-color: #FF9671;
+    float: left;
+    height: 450px;
+    width: 50%;
+}

@@ -38,4 +38,60 @@
 
   /* Combining the two CSS files */
 
+  /* Possibly need to look into using an addEventListener in Javascript instead of pure keyframe and animation */
+  .hamburger:active > div:nth-child(1) {
+    background-color: ghostwhite;
+    animation-name: top;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  .hamburger:active > div:nth-child(2) {
+    animation-name: middle;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+  }
+  
+  .hamburger:active > div:nth-child(3) {
+    background-color: ghostwhite;
+    animation-name: bottom;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  nav {
+    opacity: 0;
+    transition-duration: 1s;
+  }
+  
+  .hamburger:active ~ nav {
+    opacity: 1;
+  }
+  
+  @keyframes top {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: translateY(34px) rotate(45deg);
+    }
+  }
+  
+  @keyframes middle {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes bottom {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: translateY(-34px) rotate(-45deg);
+    }
+  }
   
