@@ -95,8 +95,8 @@ function newPlayableCharacter(x, y) {
         if (direction === 'south') {
             element.src = `assets/green-character/south.gif`
         }
-        if(direction === 'east' && left === 1096){
-            direction == null
+        if(left === 1096){
+            element.style.left = 1096 + 'px'
         }
     }
 
