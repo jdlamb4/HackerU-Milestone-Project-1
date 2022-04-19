@@ -95,6 +95,9 @@ function newPlayableCharacter(x, y) {
         if (direction === 'south') {
             element.src = `assets/green-character/south.gif`
         }
+        if(direction === 'east' && left === 1096){
+            direction == null
+        }
     }
 
     move(element).withArrowKeys(x, y, handleDirectionChange)
