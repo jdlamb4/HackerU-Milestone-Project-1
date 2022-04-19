@@ -44,7 +44,7 @@ nav a {
     height: 400px;
     width: 50%;
 }
-h2 {
+h1 {
     position: relative;
     top:35%;
 }
@@ -63,7 +63,7 @@ h2 {
 }
 
 .answer2{
-    background-color: #845EC2;
+    background-color: #D73222;
     float: right;
     height: 450px;
     width: 50%;
@@ -91,3 +91,37 @@ h2 {
     z-index: -1;
 }
 
+/* h3 {
+    position: sticky;
+    z-index: 2;
+    top: 25%;
+    left: 45%;
+} */
+
+.answer1 h2 {
+    color: black;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.answer2 h2 {
+    color: #f7dc6f;
+    position: absolute;
+    top: 10%;
+    right: 13%
+}
+
+.answer3 h2 {
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 75%;
+}
+
+.answer4 h2 {
+    color: #2E35CC;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+}
