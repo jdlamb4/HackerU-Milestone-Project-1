@@ -27,10 +27,26 @@ nav a {
     font-size: 1.5em;
 }
 
-#id{
-    display: inline;
-    height: 50vh;
-    width: 50vh;
+.page{
+    background-color: white;
+    height: 900px;
+    position: relative;
+}
+
+.question{
+    position: absolute;
+    z-index: 7;
+    background-color: white;
+    border: 5px solid black;
+    top: 25%;
+    left: 25%;
+    height: 400px;
+    width: 50%;
+}
+
+#top{
+    position: static;
+    z-index: -1;
 }
 
 .answer1{
@@ -38,6 +54,7 @@ nav a {
     float: left;
     height: 450px;
     width: 50%;
+    z-index: -1;
 }
 
 .answer2{
@@ -45,6 +62,7 @@ nav a {
     float: right;
     height: 450px;
     width: 50%;
+    z-index: -1;
 }
 
 .bottom{
@@ -57,6 +75,7 @@ nav a {
     float: right;
     height: 450px;
     width: 50%;
+    z-index: -1;
 }
 
 .answer4{
@@ -64,4 +83,5 @@ nav a {
     float: left;
     height: 450px;
     width: 50%;
+    z-index: -1;
 }
