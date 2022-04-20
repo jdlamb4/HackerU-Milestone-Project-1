@@ -78,7 +78,7 @@ function move(element) {
 
 function newPlayableCharacter(x, y) {
     const element = newImage('assets/green-character/static.gif')
-    element.style.zIndex = 1;
+    element.style.zIndex = 8;
 
     function handleDirectionChange(direction) {
             if (direction === null) {
@@ -108,3 +108,41 @@ function newPlayableCharacter(x, y) {
 }
 
 const mascot = newPlayableCharacter(100,110)
+
+
+// Integrate Timer
+
+const timeH = document.querySelector('p');
+
+let timerSeconds = 70;
+
+// // to put the timerSeconds in the display on html page
+timerDisplay(timerSeconds);
+
+const countDown = setInterval(() => {
+   timerSeconds --;
+   timerDisplay(timerSeconds);
+   if(timerSeconds <= 0){
+    // endCount();
+    clearInterval(countDown);
+    alert("The game is over");
+   }
+}, 1000)
+
+function timerDisplay(second){
+   const min = Math.floor(second / 60);
+   const sec = Math.floor(second % 60);
+   timeH.innerHTML = `${min < 10 ? '0': ''}${min}:${sec < 10 ? '0': ''}${sec}`
+}
+
+// if(timerSeconds <= 0){
+//     if(x > 9){
+//         if(x <= 952){
+//             if(y <= 841){
+//                 if(y > 460){
+//                     alert("You are correct!")
+//                 }
+//             }
+//         }
+//     }
+// }
