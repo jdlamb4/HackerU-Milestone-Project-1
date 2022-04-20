@@ -26,21 +26,22 @@ function move(element) {
         element.style.left = x + 'px'
         element.style.bottom = y + 'px'
         
-        function moveCharacter(){ 
-            if(direction === 'west'){
-                x-=1
-            }
-            if(direction === 'north'){
-                y+=1
-            }
-            if(direction === 'east'){
-                x+=1
-            }
-            if(direction === 'south'){
-                y-=1
-            }
-            element.style.left = x + 'px'
-            element.style.bottom = y + 'px'
+        function moveCharacter(){
+            // if statement for bounds having the code below nested in it stops the character but keeps in place
+                if(direction === 'west' && x >= 10){
+                    x-=1
+                }
+                if(direction === 'north' && y <= 840){
+                    y+=1
+                }
+                if(direction === 'east' && x <= 1860){
+                    x+=1
+                }
+                if(direction === 'south' && y >= 10){
+                    y-=1
+                }
+                element.style.left = x + 'px'
+                element.style.bottom = y + 'px'   
         }
         
         setInterval(moveCharacter, 1)
@@ -80,27 +81,26 @@ function newPlayableCharacter(x, y) {
     element.style.zIndex = 1;
 
     function handleDirectionChange(direction) {
-        if (direction === null) {
-            element.src = `assets/green-character/static.gif`
-        }
-        if (direction === 'west') {
-            element.src = `assets/green-character/west.gif`
-        }
-        if (direction === 'north') {
-            element.src = `assets/green-character/north.gif`
-        }
-        if (direction === 'east') {
-            element.src = `assets/green-character/east.gif`
-        }
-        if (direction === 'south') {
-            element.src = `assets/green-character/south.gif`
-        }
-        if(left === 1096){
-            element.style.left = 1096 + 'px'
-        }
+            if (direction === null) {
+                element.src = `assets/green-character/static.gif`
+            }
+            if (direction === 'west') {
+                element.src = `assets/green-character/west.gif`
+            }
+            if (direction === 'north') {
+                element.src = `assets/green-character/north.gif`
+            }
+            if (direction === 'east') {
+                element.src = `assets/green-character/east.gif`
+            }
+            if (direction === 'south') {
+                element.src = `assets/green-character/south.gif`
+            }
     }
 
-    move(element).withArrowKeys(x, y, handleDirectionChange)
+        move(element).withArrowKeys(x, y, handleDirectionChange)
+    
+    
 
     return {
         element: element
