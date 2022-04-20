@@ -47,13 +47,15 @@ nav a {
 .question h1 {
     position: relative;
     top:35%;
+    font-family: sans-serif;
 }
 
-.timer h1 {
+p {
     position: relative;
-    top: 200px;
+    top: 150px;
     text-align: center;
-    font-family: 'Montserrat';
+    font-family: sans-serif;
+    font-size: 50px;
 }
 
 #top{
@@ -64,6 +66,7 @@ nav a {
 .answer1{
     background-color: #00C9A7;
     float: left;
+    font-family: sans-serif;
     height: 450px;
     width: 50%;
     z-index: -1;
@@ -72,6 +75,7 @@ nav a {
 .answer2{
     background-color: #D73222;
     float: right;
+    font-family: sans-serif;
     height: 450px;
     width: 50%;
     z-index: -1;
@@ -85,6 +89,7 @@ nav a {
 .answer3{
     background-color: #2C73D2;
     float: right;
+    font-family: sans-serif;
     height: 450px;
     width: 50%;
     z-index: -1;
@@ -93,6 +98,7 @@ nav a {
 .answer4{
     background-color: #FF9671;
     float: left;
+    font-family: sans-serif;
     height: 450px;
     width: 50%;
     z-index: -1;
