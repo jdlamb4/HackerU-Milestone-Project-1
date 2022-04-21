@@ -41,22 +41,7 @@ function move(element) {
                     y-=1
                 }
                 element.style.left = x + 'px'
-                element.style.bottom = y + 'px'   
-        }
-
-        function locationCharacter(){
-            if(x > 9 && x < 952 && y < 841 && y > 460){
-                let location = 'correct'
-            }
-            if(x > 952 && x < 1861 && y < 841 && y > 460){
-                let location = 'incorrect'
-            }
-            if(x > 952 && x < 1861 && y < 460 && y > 9){
-                let location = 'incorrect'
-            }
-            if(x > 9 && x < 952 && y < 460 && y > 9){
-                let location = 'incorrect'
-            }
+                element.style.bottom = y + 'px'
         }
         
         setInterval(moveCharacter, 1)
@@ -88,6 +73,21 @@ function move(element) {
     return {
         to: moveToCoordinates,
         withArrowKeys: moveWithArrowKeys
+    }
+}
+
+function locationCharacter(x,y){
+    if(x > 9 && x < 952 && y < 841 && y > 460){
+        return true
+    }
+    if(x > 952 && x < 1861 && y < 841 && y > 460){
+        return false
+    }
+    if(x > 952 && x < 1861 && y < 460 && y > 9){
+        return false
+    }
+    if(x > 9 && x < 952 && y < 460 && y > 9){
+        return false
     }
 }
 
@@ -125,11 +125,12 @@ function newPlayableCharacter(x, y) {
 const mascot = newPlayableCharacter(100,110)
 
 
+
 // Integrate Timer
 
 const timeH = document.querySelector('p');
 
-let timerSeconds = 11;
+let timerSeconds = 10;
 
 // // // to put the timerSeconds in the display on html page
 // timerDisplay(timerSeconds);
@@ -137,12 +138,13 @@ let timerSeconds = 11;
 const countDown = setInterval(() => {
    timerSeconds --;
    timerDisplay(timerSeconds);
+   
    if(timerSeconds <= 0){
     // endCount();
     clearInterval(countDown);
     mascot.direction = null;
     // alert("Congrats! You are correct!")
-    if(mascot.location = 'correct'){
+    if(locationCharacter(parseInt(mascot.element.style.left), parseInt(mascot.element.style.bottom))){
         alert("Congrats! You are absolutely CORRECT!")
     }
     else {
