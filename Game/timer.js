@@ -1,7 +1,7 @@
 // Countdown timer code from https://www.youtube.com/watch?v=_a4XCarxwr8 referenced in making this timer
 const timeH = document.querySelector('p');
 
-let timerSeconds = 10;
+let timerSeconds = 11;
 
 // // // to put the timerSeconds in the display on html page
 // timerDisplay(timerSeconds);
