@@ -1,0 +1,140 @@
+nav {
+    /* background-color: blue; */
+    position: relative;
+    top: -10px;
+    margin-left: -10px;
+    text-align: center;
+    /* margin-right: -10px; */
+    /* margin: 0%;
+    border-right: 0px;
+    padding-right: 0px;
+    padding: 0%;
+    height: 50px;
+    width: auto; */
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li{
+    display: inline;
+    padding: 200px;
+}
+
+nav a {
+    font-size: 1.5em;
+}
+
+.page{
+    background-color: white;
+    height: 900px;
+    position: relative;
+}
+
+.question{
+    position: absolute;
+    text-align: center;
+    z-index: 7;
+    background-color: white;
+    border: 5px solid black;
+    top: 25%;
+    left: 25%;
+    height: 400px;
+    width: 50%;
+}
+.question h1 {
+    position: relative;
+    top:35%;
+    font-family: sans-serif;
+}
+
+p {
+    position: relative;
+    top: 150px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 50px;
+}
+
+#top{
+    position: static;
+    z-index: -1;
+}
+
+.answer1{
+    background-color: #00C9A7;
+    float: left;
+    font-family: sans-serif;
+    height: 450px;
+    width: 50%;
+    z-index: -1;
+}
+
+.answer2{
+    background-color: #D73222;
+    float: right;
+    font-family: sans-serif;
+    height: 450px;
+    width: 50%;
+    z-index: -1;
+}
+
+.bottom{
+    display: inline;
+    border-top: 10px solid white;
+}
+
+.answer3{
+    background-color: #2C73D2;
+    float: right;
+    font-family: sans-serif;
+    height: 450px;
+    width: 50%;
+    z-index: -1;
+}
+
+.answer4{
+    background-color: #FF9671;
+    float: left;
+    font-family: sans-serif;
+    height: 450px;
+    width: 50%;
+    z-index: -1;
+}
+
+/* h3 {
+    position: sticky;
+    z-index: 2;
+    top: 25%;
+    left: 45%;
+} */
+
+.answer1 h2 {
+    color: black;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.answer2 h2 {
+    color: #f7dc6f;
+    position: absolute;
+    top: 10%;
+    right: 13%
+}
+
+.answer3 h2 {
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 75%;
+}
+
+.answer4 h2 {
+    color: #2E35CC;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+}
