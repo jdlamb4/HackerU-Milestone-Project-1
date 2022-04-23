@@ -1,9 +1,3 @@
-// the website needs to have some questions preloaded. So I need to figure out a way to pull questions from a source, upload them to the website or hardcode in the mean time
-
-// I hope the gif works
-
-// If I want to set it up like Wordle, I'll need to have
-
 function newImage(url){
     let image = document.createElement('img')
     image.src = url
@@ -78,21 +72,6 @@ function move(element) {
     }
 }
 
-// function locationCharacter(x,y){
-//     if(x > 9 && x < 952 && y < 841 && y > 460){
-//         return true
-//     }
-//     if(x > 952 && x < 1861 && y < 841 && y > 460){
-//         return false
-//     }
-//     if(x > 952 && x < 1861 && y < 460 && y > 9){
-//         return false
-//     }
-//     if(x > 9 && x < 952 && y < 460 && y > 9){
-//         return false
-//     }
-// }
-
 function newPlayableCharacter(x, y) {
     const element = newImage('Assets/green-character/static.gif')
     element.style.zIndex = 8;
@@ -124,4 +103,4 @@ function newPlayableCharacter(x, y) {
     }
 }
 
-const mascot = newPlayableCharacter(100,110)
+const mascot = newPlayableCharacter(1225, 345)
