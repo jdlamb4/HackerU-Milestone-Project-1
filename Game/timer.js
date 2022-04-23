@@ -4,6 +4,8 @@ const timeH = document.querySelector('p');
 let timerSeconds = 11;
 
 // // // to put the timerSeconds in the display on html page
+// I hope the gif works
+
 // timerDisplay(timerSeconds);
 
 const countDown = setInterval(() => {
