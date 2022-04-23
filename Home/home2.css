@@ -2,7 +2,7 @@
   width: 35%;
     background-color: ghostwhite;
     animation-name: top;
-    animation-duration: 1s;
+    animation-duration: .8s;
     animation-fill-mode: forwards;
   }
   
@@ -17,7 +17,7 @@
     width: 35%;
     background-color: ghostwhite;
     animation-name: bottom;
-    animation-duration: 1s;
+    animation-duration: .8s;
     animation-fill-mode: forwards;
   }
   
