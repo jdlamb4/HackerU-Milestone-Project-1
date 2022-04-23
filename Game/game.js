@@ -97,7 +97,7 @@ function newPlayableCharacter(x, y) {
 
     function handleDirectionChange(direction) {
             if (direction === null) {
-                element.src = `assets/green-character/static.gif`
+                element.src = "assets/green-character/static.gif"
             }
             if (direction === 'west') {
                 element.src = `assets/green-character/west.gif`
