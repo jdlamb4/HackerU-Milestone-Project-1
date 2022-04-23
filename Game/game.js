@@ -94,24 +94,24 @@ function move(element) {
 // }
 
 function newPlayableCharacter(x, y) {
-    const element = newImage('assets/green-character/static.gif')
+    const element = newImage('Assets/green-character/static.gif')
     element.style.zIndex = 8;
 
     function handleDirectionChange(direction) {
             if (direction === null) {
-                element.src = 'assets/green-character/static.gif'
+                element.src = 'Assets/green-character/static.gif'
             }
             if (direction === 'west') {
-                element.src = `assets/green-character/west.gif`
+                element.src = `Assets/green-character/west.gif`
             }
             if (direction === 'north') {
-                element.src = `assets/green-character/north.gif`
+                element.src = `Assets/green-character/north.gif`
             }
             if (direction === 'east') {
-                element.src = `assets/green-character/east.gif`
+                element.src = `Assets/green-character/east.gif`
             }
             if (direction === 'south') {
-                element.src = `assets/green-character/south.gif`
+                element.src = `Assets/green-character/south.gif`
             }
     }
 
