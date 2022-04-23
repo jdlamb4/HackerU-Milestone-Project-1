@@ -1,8 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
-
 body {
-  font-family: "Josefin Sans", sans-serif;
-  background-color: gainsboro;
+  font-family: sans-serif;
+  background-color: white;
+}
+
+.welcome {
+  position: absolute;
+  align-items: center;
 }
 
 .menu {
@@ -15,7 +18,7 @@ body {
   .hamburger {
     width: 100px;
     height: 100px;
-    background: mediumvioletred;
+    background: rgb(21, 54, 199);
     color: ghostwhite;
     display: flex;
     flex-direction: column;
@@ -38,6 +41,7 @@ body {
     text-decoration: none;
     color: rebeccapurple;
     text-shadow: 1px 1px 2px darkgrey;
+    font-size: 2.5em;
   }
   a:hover {
     color: ghostwhite;

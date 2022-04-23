@@ -1,0 +1,64 @@
+body{
+    background-color: white;
+    font-family: sans-serif;
+}
+
+nav {
+    position: relative;
+    top: -10px;
+    margin-left: -10px;
+    text-align: center;
+    padding: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li{
+    display: inline;
+    padding: 200px;
+}
+
+nav a {
+    font-size: 1.5em;
+    color: blues;
+}
+
+img{
+    aspect-ratio: 16/9;
+    height: 500px;
+    float:right;
+}
+
+h1{
+    position: relative;
+    text-align: center;
+    padding: 1%;
+}
+
+.step1{
+    display: inline-flex;
+    align-content: center;
+    padding: 2%;
+}
+
+.step2{
+    display: inline-flex;
+    align-content: center;
+    padding: 2%;
+}
+
+.step3{
+    display: inline-flex;
+    align-content: center;
+    padding: 2%;
+}
+
+.step4{
+    display: inline-flex;
+    align-content: center;
+    padding: 2%;
+}
+

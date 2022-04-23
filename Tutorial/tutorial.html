@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trivile</title>
+    <link rel="stylesheet" href="tutorial.css">
 </head>
 <body>
-        <!-- no need for a hamburger menu after beginning page, but will need to put up a nav bar to get back to home and game page -->
+    <!-- no need for a hamburger menu after beginning page, but will need to put up a nav bar to get back to home and game page -->
+    <nav>
+        <li>
+            <a href="../index.html">Home</a>
+        </li>
+        <li>
+            <a href="../Game/game.html">Game</a>
+        </li>
+    </nav>
+    <h1>How to play</h1>
+    <div class = "step1">
+        <h2>When the game page is loaded, your character will start in the question box. 
+            You'll notice the timer beneath the question as well, this is the amount of time to answer the question.
+            Around the question box are the answer boxes, these are the choices you have to pick in the alotted time.
+            The character can not move outside of the bounds of the answer blocks.
+        </h2>
+        <img src="Assets/Start-Page.png" alt="Game Page">
+    </div>
+    <div class="step2">
+        <h2>To pick an answer you must move the character into the slot you think best fits the question.
+            To move you character simply use your arrow keys to move him in the box you wish to choose.
+            Once you feel like you've made the best choice, you may hit "enter" on your keyboard to submit it.
+            If your answer is correct, an alert will pop up saying so along with the amount of time it took for you to get to the answer box.
+            You do not need to hit enter to submit your choice. If the timer runs out it will submit whatever answer block your character is standing in.
+        </h2>
+        <img src="Assets/Right-Answer.png" alt="How to get a right answer">
+    </div>
+    <div class = "step3">
+        <h2>If your character is standing in one of the three incorrect answer blocks, you will have lost the game.
+            A wrong answer choice can be sumbitted be the same means listed above, by either hitting "enter" or by letting the timer run out and wherever you character stands is your answer.
+        </h2>
+        <img src="Assets/Incorrect-Answer.png" alt="When you get a wrong answer">
+    </div>
+    <div class = "step4">
+        <h1>ONE IMPORTANT NOTE: </h1>
+        <h2>At the moment, your character can submit an answer from the question block. 
+            So it is very important that if you're deciding on an answer in the question that you take into consideration the bounds of the answer block behind the question your standing on.
+        </h2>
+        <img src="Assets/Right-Answer-Border.png" alt="The Border Detail">
+    </div>
 </body>
 </html>
