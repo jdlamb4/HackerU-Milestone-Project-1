@@ -3,6 +3,7 @@ const timeH = document.querySelector('p');
 
 let timerSeconds = 70;
 let startTime = timerSeconds;
+let playTime = startTime - timerSeconds
 
 // to put the timerSeconds in the display on html page
 timerDisplay(timerSeconds)
@@ -17,7 +18,6 @@ const countDown = setInterval(() => {
     gameOver();
     // using the location character function to return a boolean and if true it give correct
     if(locationCharacter(parseInt(mascot.element.style.left), parseInt(mascot.element.style.bottom))){
-        playTime = startTime - timerSeconds
         gameOver()
         alert(`Congrats you are correct. It took you ${playTime} seconds to answer the question`)
     }
@@ -27,12 +27,12 @@ const countDown = setInterval(() => {
    }
 }, 1000)
 
-// document.addEventListener('keydown', function(e){
-//     if(e.key === 'Enter'){
-//         playTime = startTime - timerSeconds
-//         timerSeconds = 0
-//     }
-// })
+document.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){
+        playTime = startTime - timerSeconds
+        timerSeconds = 0
+    }
+})
 
 // keeps the time in minutes and seconds
 function timerDisplay(second){
