@@ -4,7 +4,7 @@ $bgcolor3: #2C73D2;
 $bgcolor4: #FF9671;
 
 @each $i in answers {
-    answer#{i} {
+    .answer#{i} {
         background-color: $bgcolor1;
         float: left;
         font-family: sans-serif;
