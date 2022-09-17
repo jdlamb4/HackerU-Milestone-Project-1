@@ -58,6 +58,15 @@ p {
 }
 
 .answer1{
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    right: 50%;
+    bottom: 50%;
+    background: red;
+    border: solid #000;
+    border-width: 0 10px 10px 0; */
+
     background-color: #00C9A7;
     float: left;
     font-family: sans-serif;

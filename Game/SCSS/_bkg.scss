@@ -1,0 +1,15 @@
+$bgcolor1: #00C9A7;
+$bgcolor2: #D73222;
+$bgcolor3: #2C73D2;
+$bgcolor4: #FF9671;
+
+@each $i in answers {
+    answer#{i} {
+        background-color: $bgcolor1;
+        float: left;
+        font-family: sans-serif;
+        height: 450px;
+        width: 50%;
+        z-index: -1;
+    }
+}
