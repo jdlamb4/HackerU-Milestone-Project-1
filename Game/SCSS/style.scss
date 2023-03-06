@@ -3,9 +3,19 @@ $bgcolor2: #D73222;
 $bgcolor3: #2C73D2;
 $bgcolor4: #FF9671;
 
-@each $i in answers {
-    .answer#{i} {
-        background-color: $bgcolor1;
+$answers: (1,2,3,4);
+$colors: (1,2,3,4);
+
+
+// @for $i from 1 through 4 {
+//     #elem span:nth-child(#{$i}) {
+//       animation-delay: unquote(".#{$i}s");
+//     }
+//   }
+
+@for $i from 1 through 4 {
+    .answer#{$i}{
+        background-color: $bgcolor#{$i};
         float: left;
         font-family: sans-serif;
         height: 450px;
@@ -13,3 +23,17 @@ $bgcolor4: #FF9671;
         z-index: -1;
     }
 }
+
+// @each $answer in $answers {
+//     .answer#{$answer} {
+//         @each $color in $colors {
+//             background-color: unqoute($bgcolor#{$color});
+//         }
+//         // background-color: $bgcolor#{$answer};
+//         float: left;
+//         font-family: sans-serif;
+//         height: 450px;
+//         width: 50%;
+//         z-index: -1;
+//     }
+// }
