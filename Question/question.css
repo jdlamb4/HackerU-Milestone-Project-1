@@ -76,7 +76,7 @@ p {
 }
 
 .answer2{
-    background-color: #D73222;
+    background-color: #ff0055;
     float: right;
     font-family: sans-serif;
     height: 450px;
@@ -99,7 +99,7 @@ p {
 }
 
 .answer4{
-    background-color: #FF9671;
+    background-color: #ff8834;
     float: left;
     font-family: sans-serif;
     height: 450px;
@@ -122,7 +122,7 @@ p {
 }
 
 .answer2 h2 {
-    color: #f7dc6f;
+    color: #00ffaa;
     position: absolute;
     top: 10%;
     right: 13%
@@ -136,7 +136,7 @@ p {
 }
 
 .answer4 h2 {
-    color: #2E35CC;
+    color: #000bd5;
     position: absolute;
     top: 80%;
     left: 10%;
