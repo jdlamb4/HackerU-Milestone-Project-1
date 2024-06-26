@@ -103,4 +103,4 @@ function newPlayableCharacter(x, y) {
     }
 }
 
-const mascot = newPlayableCharacter(1225, 345)
+const mascot = newPlayableCharacter(1, 1)

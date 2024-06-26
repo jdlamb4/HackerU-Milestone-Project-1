@@ -32,8 +32,8 @@ nav a {
 }
 
 .page{
-    background-color: white;
-    height: 900px;
+    background-color: black;
+    height: 90vh;
     position: relative;
 }
 
@@ -77,19 +77,23 @@ p {
     border: solid #000;
     border-width: 0 10px 10px 0; */
 
-    background-color: #31e450;
+    /* background-color: #31e450; */
+    background-color: #23f64c;
+    /* background-color: #20e447; */
     float: left;
     font-family: sans-serif;
     height: 450px;
+    height: 50vh;
     width: 50%;
     z-index: -1;
 }
 
 .answer2{
     background-color: #ff0055;
+    background-color: #fb106e;
     float: right;
     font-family: sans-serif;
-    height: 450px;
+    height: 50vh;
     width: 50%;
     z-index: -1;
 }
@@ -100,10 +104,14 @@ p {
 }
 
 .answer3{
-    background-color: #7715df;
+    /* background-color: #7715df; */
+    /* background-color: #da1af3; */
+    background-color: #3603a2;
     float: right;
     font-family: sans-serif;
     height: 450px;
+    height: 50vh;
+    height: 50%;
     width: 50%;
     z-index: -1;
 }
@@ -113,6 +121,8 @@ p {
     float: left;
     font-family: sans-serif;
     height: 450px;
+    height: 50vh;
+    height: 50%;
     width: 50%;
     z-index: -1;
 }
@@ -139,7 +149,10 @@ p {
 }
 
 .answer3 h2 {
-    color: white;
+    /* color: white; */
+    color: #e4dbe4;
+    /* color: #d391d7;
+    color: #fff4ff; */
     position: absolute;
     top: 80%;
     left: 75%;
