@@ -43,10 +43,10 @@ nav a {
     z-index: 7;
     background-color: white;
     border: 5px solid black;
-    top: 25%;
-    left: 25%;
-    height: 400px;
-    width: 50%;
+    top: 25vh;
+    left: 25vw;
+    height: 40vh;
+    width: 50vw;
 }
 .question h1 {
     position: relative;
