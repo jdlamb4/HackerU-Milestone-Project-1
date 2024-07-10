@@ -48,19 +48,24 @@ nav a {
     height: 40vh;
     width: 50vw;
 }
-.question h1 {
+.question h1 p {
     position: relative;
     top: 10vh;
     font-family: sans-serif;
+    text-align: center;
     font-size: 4vh;
+    /* width: 4vw; */
+    /* height: 4%; */
+    /* font-size: 4em; */
 }
 
 p {
-    position: relative;
-    top: 10vh;
-    text-align: center;
+    /* position: relative;
+    text-align: center; */
+    /* top: 10vh; */
     font-family: sans-serif;
     font-size: 6vh;
+    /* want to look at shifting the text down */
 }
 
 #top{
