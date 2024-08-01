@@ -47,6 +47,10 @@ body {
     color: ghostwhite;
   }
 
+  nav {
+    opacity: 0;
+  }
+
   /* Combining the two CSS files */
 
   /* Possibly need to look into using an addEventListener in Javascript instead of pure keyframe a
