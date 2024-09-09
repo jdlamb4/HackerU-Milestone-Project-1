@@ -112,9 +112,9 @@ p {
 .answer3{
     /* background-color: #7715df; */
     /* background-color: #da1af3; */
-    /* background-color: #3603a2; */
+    background-color: #3603a2;
     /* background-color: #50CEEB; */
-    background-color: #4BBBF5;
+    /* background-color: #4BBBF5; */
     float: right;
     font-family: sans-serif;
     height: 450px;
@@ -159,7 +159,7 @@ p {
 .answer3 h2 {
     /* color: white; */
     color: #e4dbe4;
-    color: #0C0297;
+    /* color: #0C0297; */
     /* color: #d391d7;
     color: #fff4ff; */
     position: absolute;
